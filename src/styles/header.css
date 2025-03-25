@@ -1,0 +1,274 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #001524;
+  z-index: 5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  font-family: 'Roboto';
+  
+}
+
+.header {
+  position: relative;
+      z-index: 100;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 50%; 
+  left: 21px; 
+  transform: translateY(-50%); 
+  width: 80px; 
+  height: 60px;
+  color: white; 
+  z-index: 1000;
+}
+.menu-button .line {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+}
+
+.menu-button .top {
+  width: 100%;
+  height: 7px;
+  border-radius: 34px;
+}
+
+.menu-button .bottom {
+  width: 50%;
+  height: 7px;
+  border-radius: 34px;
+}
+
+.menu-button .middle{
+  width: 75%;
+  height: 7px;
+  border-radius: 34px;
+}
+
+.menu-button:hover .top {
+  width: 50%;
+}
+
+.menu-button:hover .bottom {
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -402px;
+  height: 100vh;
+  color: white;
+  padding: 20px;
+  transition: left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar.open {
+  left: 0;
+  background: #001524;
+  width: 18%;
+}
+
+
+.sidebar ul {
+  list-style: none; 
+  padding: 0;
+  position: relative;
+  top: 26vh;
+
+}
+
+
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  color: white;
+  text-decoration: none;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease-in-out; 
+  padding-right: 10px;
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+
+.sidebar ul li a .arrow {
+  opacity: 0;
+  transform: translateX(10px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative; 
+  z-index: 10; 
+  margin-left: 10px;
+}
+
+.sidebar ul li a:hover .arrow {
+  opacity: 1;
+  transform: translateX(-5px);
+}
+
+.sidebar ul li a:hover {
+  transform: translateX(20px); /* Desplazamiento de la opción */
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+  margin-top: 45vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+  margin-left: 13px;
+}
+
+.social-icons a {
+  color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.4);
+}
+
+/* Flecha para cerrar menú */
+.close-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 18vh 8vw 0px 0px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close-menu svg {
+  transform: scaleX(2.5); 
+}
+
+.close-menu svg {
+  transform: scaleX(2.5); 
+}
+
+.close-menu:hover{
+  transform: translateX(-25px);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 100%; 
+  width: 82%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.overlay.open {
+  left: 18%; /* Se mueve a su posición final */
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contacto{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 58vh;
+      left: 3vw;
+}
+
+.contacto a{
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Roboto';
+}
+
+.icons-contact{
+  margin: 8px 11px 5px 0px;
+}
+
+
+/*
+
+@media (max-width: 768px) {
+ 
+  header nav ul li a {
+
+    font-size: 25px;
+    margin: 0 15px;
+  }
+
+  .menu-icon {
+    position: absolute;
+    top: 10px;
+
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0;
+}
+
+
+}
+
+@media (max-width: 480px) {
+
+
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline;
+    margin: 0 15px;
+  }
+
+  .menu-icon {
+    height: 5vh;
+    width: 73%;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+header nav ul li {
+  display: inline;
+  margin: 0;
+}
+
+
+}*/

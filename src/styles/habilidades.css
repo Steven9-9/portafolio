@@ -1,0 +1,124 @@
+/* Contenedor principal */
+.skills-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 90vh;
+  margin: auto;
+  position: relative;
+  top: 65px;
+  overflow: hidden;
+  background: rgb(52 40 59);
+  z-index: 20;
+  
+}
+
+/* Contenedor del texto de presentación */
+.presentation-container {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  margin: 7vh 0 0 3vw;
+  z-index: 20;
+  position: absolute;
+  background: rgb(52 40 59);
+}
+
+.presentation-text {
+  background: rgb(251 251 251 / 16%);
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 50px;
+}
+
+/* Contenedor de habilidades alineado en la derecha */
+.skills-container {
+  display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 142px;
+      gap: 103px 41px;
+      width: 47%;
+      position: relative;
+      height: 84vh;
+      left: 46vw;
+      background: rgb(52 40 59);
+  
+}
+
+/* Estilos para cada icono */
+.skill-card {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  background: rgb(52 40 59);
+}
+
+/* Establece la posición de los iconos según el diseño de la imagen */
+.skill-0 { grid-column: 1; grid-row: 1; }
+.skill-1 { grid-column: 2; grid-row: 1; }
+.skill-2 { grid-column: 3; grid-row: 1; }
+.skill-3 { grid-column: 3; grid-row: 2; }
+.skill-4 { grid-column: 3; grid-row: 3; }
+.skill-5 { grid-column: 2; grid-row: 2; }
+.skill-6 { grid-column: 4; grid-row: 4; }
+.skill-7 { grid-column: 4; grid-row: 2; }
+.skill-8 { grid-column: 4; grid-row: 3; }
+.skill-9{grid-column: 4; grid-row: 1;}
+
+/* Efecto de hover */
+.skill-card:hover {
+  border: 5px solid #bb9050;
+  transform: scale(.7);
+  border-radius: 90px;
+  width: 89%;
+  height: 16vh;
+}
+
+/* Estilo del icono */
+.skill-icon {
+  height: 70%;
+  object-fit: contain;
+  background: transparent;
+}
+
+/* Tooltip de texto */
+.skill-info {
+ display: none;
+}
+
+.habilidades{
+  position: absolute;
+  z-index: 25;
+  width: 27%;
+  color: rgb(52 40 59);
+  top: 5vh;
+  text-align: end;
+  font-size: 32px;
+}
+
+.habilidades h1 {
+  background: white;
+  padding: 0px 26px 0px 0px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateX(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
