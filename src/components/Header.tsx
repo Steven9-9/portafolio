@@ -5,6 +5,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; 
 import { MdArrowForwardIos } from 'react-icons/md';
+import { TiSocialLinkedin } from 'react-icons/ti';
 
 interface HeaderProps{
   onNavigate: (section: string) => void;
@@ -72,6 +73,7 @@ const Header: React.FC <HeaderProps> = ({onNavigate})=> {
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook size={30} /></a>
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter size={30} /></a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><TiSocialLinkedin size={30} /></a>
         </div>
 
          <button className="close-menu" onClick={toggleMenu}>

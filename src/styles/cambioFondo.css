@@ -42,15 +42,15 @@
   /* Menú de opciones */
   .config-menu {
     position: fixed;
-    top: 80px;
-    right: 20px;
+    top: 20px;
+    right: 80px;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    z-index: 10;
+    z-index: 1000 !important;
   }
   
   .config-menu button {

@@ -7,7 +7,7 @@
   height: 90vh;
   margin: auto;
   position: relative;
-  top: 65px;
+  top: 47px;
   overflow: hidden;
   background: rgb(52 40 59);
   z-index: 20;
@@ -19,7 +19,7 @@
   width: 35%;
   display: flex;
   justify-content: center;
-  margin: 7vh 0 0 3vw;
+  margin: 13vh 0 0 3vw;
   z-index: 20;
   position: absolute;
   background: rgb(52 40 59);
@@ -28,7 +28,7 @@
 .presentation-text {
   background: rgb(251 251 251 / 16%);
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,7 @@
   color: rgb(52 40 59);
   top: 5vh;
   text-align: end;
-  font-size: 32px;
+  font-size: 20px;
 }
 
 .habilidades h1 {
