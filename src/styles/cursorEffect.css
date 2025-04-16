@@ -1,0 +1,57 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: none; /* Oculta el cursor */
+    background: #0a0a0a;
+    font-family: sans-serif;
+  }
+  
+  .page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .smoke-particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff6ec4, #7873f5, #4adede);
+    opacity: 0.6;
+    animation: fadeOut 1s ease-out forwards, drift 1s ease-out;
+    pointer-events: none;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }
+  
+  @keyframes drift {
+    0% {
+      transform: translate(0, 0) scale(1);
+    }
+    100% {
+      transform: translate(-10px, -20px) scale(1.5);
+    }
+  }
+  

@@ -10,7 +10,7 @@
   top: 47px;
   overflow: hidden;
   background: rgb(52 40 59);
-  z-index: 8;
+  z-index: 20;
   
 }
 
@@ -41,7 +41,7 @@
   display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-auto-rows: 142px;
-      gap: 0px 41px;
+      gap: 103px 41px;
       width: 47%;
       position: relative;
       height: 84vh;
