@@ -1,51 +1,25 @@
 /* Contenedor principal (ya definido) */
 .container {
-    margin: auto;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     width: 90%;
-    overflow: hidden;
-    top: 5vh;
-    z-index: 10;
-  }
-  
-  .photo {
-    width: 100%;
+    height: 87vh;
+     top: 6vh;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    z-index: -2;
+    overflow: hidden;
+    z-index: 10;
   }
 
   .slide2{
     background-color: white;
   }
 
-  .photo2{
-    
-    margin: 0vh 0px 0px 48vw;
-    background: white;
-    
-  }
-
-  .photo-img2{
-    height: 63vh;
-  }
-
-  .photo3{
-    margin: 0vh 0px 0px 48vw;
-    background: white;
-  }
-
-
   .photo-img {
+    aspect-ratio: 41 / 19;
+    width: 100%;
     object-fit: cover;
-    width: 102%;
-    height: 100%;
   }
   
   .welcome {
@@ -95,20 +69,12 @@
   /* Estilos para el slider */
   .swiper-container {
     width: 100%;
-    height: 150%;
+    height: 100%;
   }
   
-  .swiper-slide {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
 
   .swiper-wrapper {
     display: flex;
-    flex-direction: row;
     position: absolute;
   }
   
@@ -132,14 +98,13 @@
   /* Estilos para la paginación en círculos (bullets) en la parte inferior derecha */
   .swiper-pagination {
     position: absolute;
-    bottom: 2px;
-    right: 2px;
+    bottom: 0px;
+    right: 0px;
     left: auto;
     display: flex;
     gap: 12px;
-    width: 22%;
+    width: 23%;
     justify-content: center;
-    background: #001524;
     height: 53px;
     align-items: center;
   }
@@ -158,11 +123,19 @@
   }
   .custom-nav {
     position: absolute;
-    bottom: 5px;
+    bottom: -3px;
     z-index: 20;
     cursor: pointer;
   }
   
+  .text1{
+    height: auto;
+    top: 33vw;
+  }
+
+  .text2{
+    color: black;
+  }
   .prev-nav {
     right: 17vw;
   }
