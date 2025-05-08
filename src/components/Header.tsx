@@ -61,7 +61,7 @@ const Header: React.FC <HeaderProps> = ({onNavigate})=> {
           <li><a href="#portada" onClick={() => onNavigate ("portada")}><MdArrowForwardIos className="arrow" />Sobre mí</a></li>
           <li><a href="#habilidades" onClick={() => onNavigate("habilidades")}><MdArrowForwardIos className="arrow" />habilidades</a></li>
           <li><a href="#proyectos" onClick={() => onNavigate("proyectos")}><MdArrowForwardIos className="arrow" />Proyectos</a></li>
-          <li><a href="#contacto" onClick={() => onNavigate("habilidades")}><MdArrowForwardIos className="arrow" />Contacto</a></li>
+          <li><a href="#contacto" onClick={() => onNavigate("proyectos")}><MdArrowForwardIos className="arrow" />Contacto</a></li>
         </ul>
 
         <div className='contacto'>

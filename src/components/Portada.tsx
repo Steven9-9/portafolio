@@ -6,7 +6,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { Navigation, Pagination } from 'swiper/modules';
 import fotoPerfil from '../assets/img/Portfolio_Presentation_01.jpg';
 import fotoPerfil2 from '../assets/img/Portfolio_Presentation_02.jpg';
-import fotoPerfil3 from '../assets/img/foto6.jpeg';
+import fotoPerfil3 from '../assets/img/pt3.jpeg';
 import CambioFondo from './CambioFondo';
 
 const Portada: React.FC = () => {
